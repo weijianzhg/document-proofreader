@@ -1,7 +1,11 @@
 import os
 import json
+from dotenv import load_dotenv
 from openai import OpenAI
 from token_manager import TokenManager
+
+# Load environment variables from .env file
+load_dotenv()
 
 class Proofreader:
     def __init__(self, api_key=None):

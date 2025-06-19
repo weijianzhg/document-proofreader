@@ -48,9 +48,17 @@ uv sync
 ```
 
 4. Set up your OpenAI API key:
-```bash
-export OPENAI_API_KEY="your-api-key-here"
-```
+   Create a `.env` file in the project root:
+   ```bash
+   touch .env
+   ```
+
+   Add your OpenAI API key to the `.env` file:
+   ```
+   OPENAI_API_KEY=your-api-key-here
+   ```
+
+   **Important**: Add `.env` to your `.gitignore` file to keep your API key secure and prevent it from being committed to version control.
 
 ## Usage
 
